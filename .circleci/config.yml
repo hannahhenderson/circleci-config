@@ -1,0 +1,12 @@
+version: 2.1
+
+executors:
+  macos_exec:
+    macos:
+      xcode: "10.2.0"
+
+jobs:
+  build:
+    executor: macos_exec
+    steps:
+      - run: echo great success
